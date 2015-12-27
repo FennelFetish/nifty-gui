@@ -480,6 +480,10 @@ public abstract class ElementBuilder {
     interactAttributes.setOnClickAlternateKey(onClickAlternateKey);
   }
 
+  public void interact(@Nonnull final String trigger, @Nonnull final String callback) {
+    interactAttributes.setAttribute(trigger, callback);
+  }
+
   public List<ElementBuilder> getElementBuilders() {
     return Collections.unmodifiableList(elementBuilders);
   }

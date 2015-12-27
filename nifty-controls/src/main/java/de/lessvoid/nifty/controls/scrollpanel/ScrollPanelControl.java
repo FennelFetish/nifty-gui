@@ -213,7 +213,7 @@ public class ScrollPanelControl extends AbstractController implements ScrollPane
   @Override
   public void setStepSizeY(final float stepSizeY) {
     this.stepSizeY = stepSizeY;
-    Scrollbar verticalS = getHorizontalScrollbarControl();
+    Scrollbar verticalS = getVerticalScrollbarControl();
     if (verticalS != null) {
       verticalS.setButtonStepSize(stepSizeY);
     }
